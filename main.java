@@ -4,7 +4,7 @@ import java.util.List;
 
 //export CLASSPATH=${CLASSPATH}:./libs/*
 
-public class Practical3 {
+public class main {
     public static void main(String[] args) {
         UserInterface ui = new UserInterface(new Scanner(System.in));
 
