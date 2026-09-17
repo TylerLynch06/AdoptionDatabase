@@ -1,0 +1,12 @@
+[EL Info]: 2026-09-17 22:48:45.115--ServerSession(846254484)--EclipseLink, version: Eclipse Persistence Services - 2.7.16.v20250613-47773a333b
+[EL Info]: connection: 2026-09-17 22:48:45.204--Not able to detect platform for vendor name [SQLite[3.51.2, 3]]. Defaulting to [org.eclipse.persistence.platform.database.DatabasePlatform]. The database dialect used may not match with the database you are using. Please explicitly provide a platform using property "eclipselink.target-database".
+[EL Warning]: 2026-09-17 22:48:45.24--ServerSession(846254484)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.16.v20250613-47773a333b): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "CONSTRAINT": syntax error)
+Error Code: 1
+Call: ALTER TABLE ADOPTIONS ADD CONSTRAINT FK_ADOPTIONS_ANIMAL_ID FOREIGN KEY (ANIMAL_ID) REFERENCES ANIMALS (ID)
+Query: DataModifyQuery(sql="ALTER TABLE ADOPTIONS ADD CONSTRAINT FK_ADOPTIONS_ANIMAL_ID FOREIGN KEY (ANIMAL_ID) REFERENCES ANIMALS (ID)")
+[EL Warning]: 2026-09-17 22:48:45.243--ServerSession(846254484)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.16.v20250613-47773a333b): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "CONSTRAINT": syntax error)
+Error Code: 1
+Call: ALTER TABLE preferred_species ADD CONSTRAINT FK_preferred_species_adopter_id FOREIGN KEY (adopter_id) REFERENCES ADOPTERS (ID)
+Query: DataModifyQuery(sql="ALTER TABLE preferred_species ADD CONSTRAINT FK_preferred_species_adopter_id FOREIGN KEY (adopter_id) REFERENCES ADOPTERS (ID)")
