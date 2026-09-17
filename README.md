@@ -23,5 +23,5 @@ java -cp "build;libs\*" main <database> <option>
 
 **Example:**
 ```powershell
-java -cp "build;libs\*" main empty.db 4
+java -cp "build;libs\*" main empty.db 1
 ```
