@@ -8,8 +8,11 @@ Possible options:
 7 - return an animal to the rehoming centre. 
 
 How to compile:
+
 javac -cp "libs\*" -d build *.java
+
 xcopy META-INF build\META-INF\ /E /I
 
 run with:
+
 java -cp "build;libs\*" main <database> <option>
